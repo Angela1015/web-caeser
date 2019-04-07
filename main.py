@@ -16,12 +16,12 @@ form = """
                 font: 16pxsans-serif;
                 border-radius: 10px;
             }
-            textarea{
+            textarea{{
                 margin: 10px 0;
                 width: 540px;
                 height: 120px;
 
-            }
+            }}
         </style>
      
     </head>
@@ -50,7 +50,7 @@ def encrypt():
         encrypted_text = rotate_string(text,rot)
 
     
-    return <h1> encrypted_text</h1>
+    return encrypted_text
 
 
 app.run()
