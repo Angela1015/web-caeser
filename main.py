@@ -8,14 +8,14 @@ form = """
 <html>
     <head>
         <style>
-            form{
+            form{{
                 background-color: #eee;
                 padding: 20px;
                 margin: 0 auto;
                 width: 540px;
                 font: 16pxsans-serif;
                 border-radius: 10px;
-            }
+            }}
             textarea{{
                 margin: 10px 0;
                 width: 540px;
@@ -30,7 +30,7 @@ form = """
       <form method = "POST">
         <label for "rotate_number">Rotate by:</label>
         <input id = "rotate_number" type = "text" name = "rot" value ="0"/>
-        <textarea name = "text"></textarea>
+        <textarea name = "text">{}</textarea>
         <input type ="submit" value = "Submit Query"/>
       </form>
     </body>
@@ -49,7 +49,7 @@ def encrypt():
     for char in text:
         encrypted_text = rotate_string(text,rot)
         
-    return form + encrypted_text
+    return form.format(encrypted_text)
 
 
 app.run()
