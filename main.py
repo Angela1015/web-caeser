@@ -30,7 +30,11 @@ form = """
       <form method = "POST">
         <label for "rotate_number">Rotate by:</label>
         <input id = "rotate_number" type = "text" name = "rot" value ="0"/>
+<<<<<<< HEAD
         <textarea name = "text">{0}</textarea>
+=======
+        <textarea name = "text">{}</textarea>
+>>>>>>> f970c36740cef6953e17f55caf1170eaf515a1a2
         <input type ="submit" value = "Submit Query"/>
       </form>
     </body>
